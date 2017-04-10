@@ -1,0 +1,31 @@
+Name: Steve Brown
+SID: 11466405
+Email: stephen.p.brown@wsu.edu
+
+Description:
+
+This program reads in the coordinates given based on the amount of N (to make the size of the
+matrix), then builds a 2*N x 8 matrix and a 2*N x 1 vector and then uses ATA and ATb
+in order to make an 8 x 8 matrix that sends to LUdecompose and then LUsolve to solve for
+and output the homography matrix in row-major order.
+
+How to compile and run:
+
+make
+./homography < boxtop.in (And any other text file you want to use)
+./homography < shelves.in (Works as well)
+./homography < boxtop.in | ./hmap cheerios-small.ppm 500 650 > face.ppm (This will work too)
+
+List of files:
+
+(cheerios-small.ppm not included due to file uploading size restraints)
+
+LUdecomp.c
+LUdecomp.h
+homography.c
+hmap.c
+README
+boxtop.in
+shelves.in
+Makefile
+
